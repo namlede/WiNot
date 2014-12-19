@@ -1,0 +1,9 @@
+<div id="base"></div>
+<script>
+function setContent(htmlToSet){
+alert("here");
+document.getElementById('base').innerHTML=htmlToSet;
+
+}
+alert("here2");
+</script>

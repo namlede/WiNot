@@ -1,0 +1,19 @@
+var a=false;
+function onRequest(request, sender, callback) {
+	alert(request.url);
+	if(a){alert("can redirect");
+	chrome.extension.getURL('some_folder/some_file.js')
+	}
+
+}
+var filter = {urls: ["http://*/*", "https://*/*"]};
+chrome.webRequest.onBeforeRequest.addListener(onRequest,filter);
+//note that is does this fairly constastantly when you try typing stuff in for autocorrect stuff
+chrome.runtime.onMessage.addListener(
+  function(request, sender, sendResponse) {
+   a= !a;
+    if (request.greeting == "hello")
+      sendResponse({data1: "goodbye"});
+  });
+
+

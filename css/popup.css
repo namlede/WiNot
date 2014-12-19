@@ -1,0 +1,39 @@
+body {
+  background-color: #F0F0F0;
+}
+
+div {
+  width: 50px;
+  height: 40px;
+}
+
+.panel {
+  text-align: center;
+}
+
+#button1 {
+  background-color: #8FD8D8;
+  text-decoration: none;
+	color: #3D59AB;
+	font-family: Helvetica, sans-serif;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+#settings {
+  font-family: Helvetica, sans-serif;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+#settings-link {
+  text-decoration: none;
+}
+
+span {
+  font-weight: bold;
+	font-size: 18px;
+	color: #4169e1;
+}

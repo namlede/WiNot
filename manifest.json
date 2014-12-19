@@ -1,0 +1,32 @@
+{
+
+  "name": "WiNot",
+  "version": "1.1",
+  "manifest_version": 2,
+  "description": "Allows you to view webpages while offline.",
+  "background": {
+    "scripts": ["js/background.js"],
+     "pages":["basePage.html"]
+  },
+  "icons":
+  {
+    "128": "winot128.png",
+    "48": "winot48.png",
+    "19": "winot.png"
+  },
+  "permissions":[
+	"webRequest","http://*/*", "https://*/*", "history", "storage", "unlimitedStorage", "webRequestBlocking","contentSettings"
+	
+],
+  "web_accessible_resources": [
+    "popup.html"
+  ],
+  "browser_action": {
+    "default_icon": "winot.png",
+    "default_popup": "popup.html"
+  },
+  "offline_enabled": true,
+  "options_page": "options.html"
+}
+
+
